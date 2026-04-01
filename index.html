@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>We’ll Reach You Shortly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a5acd, #b57edc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            width: 90%;
+            max-width: 450px;
+            background: rgba(255,255,255,0.12);
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        .icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+            animation: glow 2s infinite alternate;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 17px;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #d8b4f8;
+            color: #4b0082;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+            .btn:hover {
+                background: #c084fc;
+            }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #e6ccff;
+            }
+
+            to {
+                text-shadow: 0 0 25px #ffffff;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width: 500px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="icon">💜</div>
+
+        <h1>We’ll Reach You Shortly</h1>
+
+        <p>We are taking a short pause for the day.</p>
+        <p>Our services will resume tomorrow at <strong>9:00 AM</strong>.</p>
+
+        <p>
+            ✨ We look forward to serving you again ✨
+        </p>
+
+        <!-- 👉 Replace with your number -->
+        <a href="https://wa.me/919750085888" class="btn" target="_blank">
+            Contact Us on WhatsApp
+        </a>
+
+        <div class="footer">
+            Thank you for your patience 💜
+        </div>
+    </div>
+
+</body>
+</html>
